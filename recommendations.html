@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryLoom - Your Recommendations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo"><i class="fas fa-book-open"></i> StoryLoom</h1>
+            <p class="tagline">Here are some books you might love!</p>
+        </header>
+
+        <main>
+            <div id="recommendations-container" class="recommendations-grid">
+                </div>
+            <div id="no-recommendations-message" class="no-recommendations" style="display: none;">
+                <i class="fas fa-exclamation-circle" style="color: #e74c3c; margin-right: 10px;"></i>
+                No recommendations found for your preferences. Try the quiz again!
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 StoryLoom. All rights reserved.</p>
+        <p><a href="contributors.html"><i class="fas fa-users"></i> Our Contributors</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
