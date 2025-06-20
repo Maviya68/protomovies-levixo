@@ -1,0 +1,454 @@
+/* Google Fonts Import - Poppins for primary text, Merriweather for headings */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Basic Reset & Box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Custom Scrollbar for a cleaner look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f0f4f7;
+}
+::-webkit-scrollbar-thumb {
+    background: #a9cce3;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #85b0d3;
+}
+
+
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px; /* Reduced base font size */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4f7 0%, #e0e9ee 100%);
+    color: #34495e;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 980px; /* Slightly narrower container */
+    margin: 40px auto; /* Reduced vertical margin */
+    padding: 35px; /* Reduced internal padding */
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08); /* Refined shadow */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header/Logo Styles */
+header {
+    text-align: center;
+    padding-bottom: 25px; /* Reduced padding */
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 40px; /* Reduced margin */
+}
+
+.logo {
+    font-family: 'Merriweather', serif;
+    font-size: 3.5em; /* Reduced logo font size */
+    font-weight: 700;
+    color: #4a90e2;
+    margin-bottom: 5px; /* Reduced margin */
+    letter-spacing: -1.5px; /* Adjusted letter spacing */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.logo i { /* Styling for the icon in the logo */
+    margin-right: 10px;
+    font-size: 0.9em; /* Slightly smaller than text */
+    color: #1abc9c; /* Accent color for icon */
+}
+
+.tagline {
+    font-size: 1.1em; /* Reduced tagline font size */
+    color: #7f8c8d;
+    font-weight: 400;
+}
+
+/* Button Styles */
+.button {
+    display: inline-flex; /* Use flexbox for icon and text alignment */
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+    padding: 15px 30px; /* Reduced padding */
+    margin-top: 30px; /* Reduced margin */
+    background: linear-gradient(45deg, #4a90e2, #6a82fb);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1em; /* Reduced font size */
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(74, 144, 226, 0.35); /* Refined shadow */
+    letter-spacing: 0.5px;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #357bd8, #556ee0);
+    transform: translateY(-4px); /* Slightly less pronounced lift */
+    box-shadow: 0 10px 22px rgba(74, 144, 226, 0.5);
+}
+
+/* Quiz Page Styles */
+.quiz-section h2 {
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 35px; /* Reduced margin */
+    font-size: 2.5em; /* Reduced title font size */
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+}
+
+.quiz-question {
+    background-color: #fcfdfe;
+    border: 1px solid #eef2f5;
+    border-radius: 12px;
+    padding: 25px; /* Reduced padding */
+    margin-bottom: 25px; /* Reduced margin */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.03); /* Refined shadow */
+}
+
+.quiz-question p {
+    font-size: 1.15em; /* Reduced question text size */
+    font-weight: 600;
+    margin-bottom: 18px; /* Reduced margin */
+    color: #34495e;
+}
+
+.quiz-options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px; /* Reduced margin */
+    cursor: pointer;
+    font-size: 1em; /* Reduced option font size */
+    color: #555;
+    transition: color 0.2s ease;
+    padding: 6px 0; /* Reduced padding */
+}
+
+.quiz-options label:hover {
+    color: #4a90e2;
+}
+
+.quiz-options input[type="radio"] {
+    margin-right: 12px; /* Reduced margin */
+    transform: scale(1.2); /* Slightly smaller radio buttons */
+    accent-color: #4a90e2;
+    min-width: 18px; /* Adjusted min-width */
+    min-height: 18px; /* Adjusted min-height */
+}
+
+.submit-quiz-button {
+    text-align: center;
+    margin-top: 50px; /* Reduced margin */
+}
+
+/* Recommendations Page Styles */
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); /* Slightly narrower cards */
+    gap: 30px; /* Reduced gap */
+    padding-top: 15px; /* Reduced padding */
+}
+
+.book-card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Refined shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card:hover {
+    transform: translateY(-8px); /* Slightly less pronounced lift */
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.book-card img {
+    width: 100%;
+    height: 300px; /* Reduced image height */
+    object-fit: cover;
+    border-bottom: 1px solid #f0f0f0;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover img {
+    transform: scale(1.03); /* Slight zoom on image hover */
+}
+
+.book-info {
+    padding: 25px; /* Reduced padding */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-title {
+    font-size: 1.5em; /* Reduced title font size */
+    font-weight: 700;
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.book-author {
+    font-size: 0.95em; /* Reduced author font size */
+    color: #7f8c8d;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.book-description {
+    font-size: 0.9em; /* Reduced description font size */
+    color: #555;
+    margin-bottom: 20px; /* Reduced margin */
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Keep 5 lines */
+    -webkit-box-orient: vertical;
+}
+
+.book-genre {
+    font-size: 0.85em; /* Reduced genre font size */
+    color: #1abc9c;
+    background-color: #eafbf7;
+    padding: 6px 12px; /* Reduced padding */
+    border-radius: 15px; /* Adjusted border radius */
+    align-self: flex-start;
+    margin-top: 12px; /* Reduced margin */
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* No Recommendations Message */
+.no-recommendations {
+    text-align: center;
+    font-size: 1.2em; /* Reduced font size */
+    color: #888;
+    padding: 50px; /* Reduced padding */
+    font-weight: 400;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 25px; /* Reduced padding */
+    margin-top: 60px; /* Reduced margin */
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-size: 0.9em; /* Reduced font size */
+    border-top: 1px solid #4a627a;
+}
+
+footer a {
+    color: #aebfd0;
+    text-decoration: none;
+    margin: 0 15px; /* Reduced margin */
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #4a90e2;
+    text-decoration: underline;
+}
+
+/* Contributors Page Styles */
+.contributors-section h2 {
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 35px; /* Reduced margin */
+    font-size: 2.5em; /* Reduced font size */
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+}
+
+.contributors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Slightly narrower cards */
+    gap: 30px; /* Reduced gap */
+    padding: 15px 0; /* Reduced padding */
+}
+
+.contributor-card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Refined shadow */
+    padding: 25px; /* Reduced padding */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contributor-card:hover {
+    transform: translateY(-7px); /* Slightly less pronounced lift */
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.contributor-card img {
+    width: 110px; /* Reduced image size */
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px; /* Reduced margin */
+    border: 4px solid #4a90e2; /* Reduced border thickness */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.contributor-card:hover img {
+    border-color: #1abc9c;
+}
+
+.contributor-card h3 {
+    font-size: 1.4em; /* Reduced name font size */
+    color: #34495e;
+    margin-bottom: 8px; /* Reduced margin */
+    font-weight: 600;
+}
+
+.contributor-card p {
+    font-size: 0.9em; /* Reduced description font size */
+    color: #7f8c8d;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Further reduce base font size on small screens */
+    }
+    .container {
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .logo {
+        font-size: 2.8em;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    .quiz-section h2, .contributors-section h2 {
+        font-size: 2em;
+        margin-bottom: 25px;
+    }
+
+    .quiz-question {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    .quiz-question p {
+        font-size: 1.05em;
+    }
+
+    .quiz-options label {
+        font-size: 0.95em;
+    }
+
+    .book-card {
+        margin: 0 auto;
+        max-width: 320px;
+    }
+
+    .book-card img {
+        height: 220px;
+    }
+
+    .book-info {
+        padding: 18px;
+    }
+
+    .book-title {
+        font-size: 1.3em;
+    }
+
+    .contributor-card img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .contributor-card h3 {
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    footer a {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 13px; /* Smallest base font size */
+    }
+    .container {
+        padding: 10px;
+        margin: 10px auto;
+        box-shadow: none;
+    }
+
+    .logo {
+        font-size: 2.2em;
+    }
+
+    .tagline {
+        font-size: 0.85em;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 0.85em;
+    }
+
+    .quiz-section h2, .contributors-section h2 {
+        font-size: 1.8em;
+    }
+
+    .quiz-question {
+        padding: 12px;
+    }
+
+    .quiz-question p {
+        font-size: 0.95em;
+    }
+
+    .book-card img {
+        height: 180px; 
+    }
+}
