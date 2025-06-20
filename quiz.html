@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryLoom - Take The Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo"><i class="fas fa-book-open"></i> StoryLoom</h1>
+            <p class="tagline">Tell us about your interests...</p>
+        </header>
+
+        <main class="quiz-section">
+            <h2>Book Preference Quiz</h2>
+            <form id="quizForm">
+                <div class="quiz-question">
+                    <p>1. What kind of atmosphere do you prefer in a story?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q1" value="mystery,thriller"> Mysterious and Suspenseful</label>
+                        <label><input type="radio" name="q1" value="fantasy,adventure"> Magical and Adventurous</label>
+                        <label><input type="radio" name="q1" value="sci-fi,futuristic"> Futuristic and Thought-provoking</label>
+                        <label><input type="radio" name="q1" value="romance,drama"> Emotional and Character-driven</label>
+                        <label><input type="radio" name="q1" value="historical,drama"> Richly Historical</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>2. Which setting excites you the most?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q2" value="fantasy"> Ancient Kingdoms or Mythical Realms</label>
+                        <label><input type="radio" name="q2" value="sci-fi"> Distant Galaxies or Dystopian Futures</label>
+                        <label><input type="radio" name="q2" value="mystery,thriller"> Bustling Modern Cities</label>
+                        <label><input type="radio" name="q2" value="romance,contemporary"> Cozy Small Towns or Suburbs</label>
+                        <label><input type="radio" name="q2" value="historical"> A Specific Historical Era (e.g., Victorian, WWII)</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>3. Do you prefer a story that is...?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q3" value="thriller,adventure"> Fast-paced and action-packed</label>
+                        <label><input type="radio" name="q3" value="drama,contemporary"> Slowly unfolding and character-driven</label>
+                        <label><input type="radio" name="q3" value="sci-fi,philosophical"> Thought-provoking and philosophical</label>
+                        <label><input type="radio" name="q3" value="humor,romance"> Lighthearted and humorous</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>4. What kind of protagonists do you enjoy reading about?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q4" value="fantasy,adventure"> Heroic figures undertaking grand quests</label>
+                        <label><input type="radio" name="q4" value="contemporary,drama"> Everyday people facing relatable challenges</label>
+                        <label><input type="radio" name="q4" value="mystery,thriller"> Detectives or spies solving complex puzzles</label>
+                        <label><input type="radio" name="q4" value="sci-fi,philosophical"> Scientists or innovators exploring new frontiers</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>5. What emotional experience do you seek in a book?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q5" value="thriller,mystery"> Excitement, suspense, and a sense of dread</label>
+                        <label><input type="radio" name="q5" value="romance,contemporary"> Warmth, comfort, and heartfelt connection</label>
+                        <label><input type="radio" name="q5" value="philosophical,sci-fi"> Reflection, introspection, and new perspectives</label>
+                        <label><input type="radio" name="q5" value="humor,light-fiction"> Laughter, joy, and pure entertainment</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>6. Which theme appeals to you most?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q6" value="fantasy,adventure"> Good vs. Evil and epic battles</label>
+                        <label><input type="radio" name="q6" value="contemporary,drama"> Self-discovery and personal growth</label>
+                        <label><input type="radio" name="q6" value="romance"> Love, relationships, and human connection</label>
+                        <label><input type="radio" name="q6" value="social-commentary"> Social commentary and societal issues</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>7. When you finish a book, what do you hope to feel?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q7" value="satisfaction"> Satisfied and complete</label>
+                        <label><input type="radio" name="q7" value="inspiration"> Inspired and hopeful</label>
+                        <label><input type="radio" name="q7" value="intrigue"> Challenged and intrigued, with lingering thoughts</label>
+                        <label><input type="radio" name="q7" value="eager"> Eager for a sequel or more from the author</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>8. How do you prefer the plot to unfold?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q8" value="mystery,thriller"> With unexpected twists and turns</label>
+                        <label><input type="radio" name="q8" value="drama,contemporary"> Focusing on character development and internal struggles</label>
+                        <label><input type="radio" name="q8" value="adventure,fantasy"> Through a grand journey or quest</label>
+                        <label><input type="radio" name="q8" value="sci-fi,philosophical"> Exploring complex ideas and concepts</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>9. What kind of challenge do you enjoy reading about?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q9" value="thriller,survival"> Life-or-death survival scenarios</label>
+                        <label><input type="radio" name="q9" value="mystery,crime"> Solving a challenging mystery or crime</label>
+                        <label><input type="radio" name="q9" value="drama,relationship"> Navigating complex relationships or family dynamics</label>
+                        <label><input type="radio" name="q9" value="fantasy,magic"> Overcoming magical or fantastical obstacles</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>10. What kind of ending do you generally prefer?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q10" value="optimistic"> Optimistic and hopeful</label>
+                        <label><input type="radio" name="q10" value="realistic"> Realistic, even if bittersweet</label>
+                        <label><input type="radio" name="q10" value="ambiguous"> Ambiguous, leaving room for thought</label>
+                        <label><input type="radio" name="q10" value="satisfying"> A clear and satisfying resolution</label>
+                    </div>
+                </div>
+
+                <div class="submit-quiz-button">
+                    <button type="submit" class="button"><i class="fas fa-arrow-right"></i> Get My Recommendations</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 StoryLoom. All rights reserved.</p>
+        <p><a href="contributors.html"><i class="fas fa-users"></i> Our Contributors</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
